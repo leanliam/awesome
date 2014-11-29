@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPressed(sender: AnyObject) {
         
+        println("working")
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
