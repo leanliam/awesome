@@ -22,6 +22,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var button0: UIButton!
     
+    @IBOutlet weak var label: UILabel!
+    
     @IBAction func buttonPressed(sender: AnyObject) {
         
         if gameState[sender.tag]==0 {
@@ -49,7 +51,19 @@ class ViewController: UIViewController {
             
             if (winner != 0) {
                 
-                println("We have a winner")
+                if (winner == 1) {
+                    
+                    label.text = "O has won!"
+                    
+                } else {
+                    
+                    label.text = "X has won!"
+                }
+                
+                UIView.animateWithDuration(1, animations: {
+                    
+                    self.label.center = CGPointMake(self.label.center.x + 400, self.label.center.y)
+                })
             }
         
         goNumber++
@@ -69,6 +83,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func viewDidAppear(animated: Bool) {
+        
+        label.center = CGPointMake(label.center.x - 400, label.center.y)
+    }
 
 }
 

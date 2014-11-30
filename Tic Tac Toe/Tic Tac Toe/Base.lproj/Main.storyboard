@@ -127,6 +127,17 @@
                                     <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7ME-CK-9BZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jR-Qd-hKa">
+                                <rect key="frame" x="46" y="251" width="229" height="65"/>
+                                <color key="backgroundColor" red="0.1024984937" green="0.14240575680000001" blue="0.60631793479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="229" id="SB3-9H-wAJ"/>
+                                    <constraint firstAttribute="height" constant="65" id="kvn-k5-kZD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAf-ak-XcJ">
                                 <rect key="frame" x="46" y="172" width="65" height="65"/>
                                 <constraints>
@@ -143,6 +154,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="SoO-hN-RZv" firstAttribute="leading" secondItem="2jR-Qd-hKa" secondAttribute="leading" constant="-46" id="5J8-KE-OVj"/>
                             <constraint firstItem="VKx-yW-kPh" firstAttribute="top" secondItem="SoO-hN-RZv" secondAttribute="top" constant="208" id="BEZ-Ih-f5d"/>
                             <constraint firstItem="SoO-hN-RZv" firstAttribute="top" secondItem="3Vu-oh-sFC" secondAttribute="top" constant="-127" id="FJ6-if-to7"/>
                             <constraint firstItem="SoO-hN-RZv" firstAttribute="top" secondItem="WAf-ak-XcJ" secondAttribute="top" constant="-48" id="G2Q-f0-Keg"/>
@@ -161,6 +173,7 @@
                             <constraint firstItem="6H7-rJ-rXF" firstAttribute="top" secondItem="SoO-hN-RZv" secondAttribute="top" constant="48" id="hEU-X9-syV"/>
                             <constraint firstItem="836-fl-GGO" firstAttribute="top" secondItem="SoO-hN-RZv" secondAttribute="top" constant="48" id="hwl-eW-yEV"/>
                             <constraint firstItem="SoO-hN-RZv" firstAttribute="leading" secondItem="7yr-bU-KuE" secondAttribute="leading" constant="-210" id="na8-nL-4zU"/>
+                            <constraint firstItem="SoO-hN-RZv" firstAttribute="top" secondItem="2jR-Qd-hKa" secondAttribute="top" constant="-127" id="ts9-u0-Ab0"/>
                             <constraint firstItem="SoO-hN-RZv" firstAttribute="top" secondItem="fUX-Ak-gva" secondAttribute="top" constant="-127" id="uCr-mh-339"/>
                             <constraint firstItem="SoO-hN-RZv" firstAttribute="leading" secondItem="WAf-ak-XcJ" secondAttribute="leading" constant="-46" id="ufK-4u-kAl"/>
                         </constraints>
@@ -168,6 +181,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="button0" destination="WAf-ak-XcJ" id="8Lj-8B-ic9"/>
+                        <outlet property="label" destination="2jR-Qd-hKa" id="Pf7-rn-8i6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
