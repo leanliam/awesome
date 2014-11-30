@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(sender: AnyObject) {
         
         var image = UIImage(named: "X.png")
-        button0.setImage(image, forState: .Normal)
+        sender.setImage(image, forState: .Normal)
         
     }
     override func viewDidLoad() {
