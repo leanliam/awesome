@@ -55,9 +55,13 @@ class ViewController: UIViewController {
                     
                     label.text = "O has won!"
                     
+                    label.hidden = false
+                    
                 } else {
                     
                     label.text = "X has won!"
+                    
+                    label.hidden = false
                 }
                 
                 UIView.animateWithDuration(1, animations: {
@@ -76,17 +80,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        label.hidden = true
+        
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     override func viewDidAppear(animated: Bool) {
-        
         label.center = CGPointMake(label.center.x - 400, label.center.y)
+    
     }
+
 
 }
 
