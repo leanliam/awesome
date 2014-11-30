@@ -36,11 +36,19 @@ class ViewController: UIViewController {
         
         label.center = CGPointMake(label.center.x - 400, label.center.y)
         
+        label.hidden = true
+        
         playAgain.alpha = 0
         
-        var button : UIButton = view.viewWithTag(1) as UIButton
+        var button : UIButton
+        
+        for var i = 1; i < 9; i++ {
+        
+        button = view.viewWithTag(i) as UIButton
         
         button.setImage(nil, forState: .Normal)
+        
+        }
     }
     
     @IBAction func buttonPressed(sender: AnyObject) {
