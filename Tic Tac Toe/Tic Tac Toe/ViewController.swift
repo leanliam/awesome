@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPressed(sender: AnyObject) {
         
-        if gameState[sender.tag]==0 {
+        if (gameState[sender.tag]==0 && winner == 0) {
         
         var image = UIImage()
         
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
                     label.hidden = false
                 }
                 
-                UIView.animateWithDuration(1, animations: {
+                UIView.animateWithDuration(0.4, animations: {
                     
                     self.label.center = CGPointMake(self.label.center.x + 400, self.label.center.y)
                 })
