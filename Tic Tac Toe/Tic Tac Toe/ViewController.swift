@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     @IBOutlet weak var playAgain: UIButton!
-    
+   
     @IBAction func playAgainPressed(sender: AnyObject) {
         
         goNumber = 1
@@ -41,13 +41,13 @@ class ViewController: UIViewController {
         playAgain.alpha = 0
         
         var button : UIButton
-        
-        for var i = 1; i < 9; i++ {
-        
-        button = view.viewWithTag(i) as UIButton
-        
-        button.setImage(nil, forState: .Normal)
-        
+ 
+        for var i = 0; i < 9; i++ {
+ 
+            button = view.viewWithTag(i) as UIButton
+  
+            button.setImage(nil, forState: .Normal)
+            
         }
     }
     
