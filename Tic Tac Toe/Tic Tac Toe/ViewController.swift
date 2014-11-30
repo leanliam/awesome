@@ -24,6 +24,25 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
     
+    @IBOutlet weak var playAgain: UIButton!
+    
+    @IBAction func playAgainPressed(sender: AnyObject) {
+        
+        goNumber = 1
+        
+        winner = 0
+        
+        gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        
+        label.center = CGPointMake(label.center.x - 400, label.center.y)
+        
+        playAgain.alpha = 0
+        
+        var button : UIButton = view.viewWithTag(1) as UIButton
+        
+        button.setImage(nil, forState: .Normal)
+    }
+    
     @IBAction func buttonPressed(sender: AnyObject) {
         
         if (gameState[sender.tag]==0 && winner == 0) {
@@ -67,6 +86,9 @@ class ViewController: UIViewController {
                 UIView.animateWithDuration(0.4, animations: {
                     
                     self.label.center = CGPointMake(self.label.center.x + 400, self.label.center.y)
+                    
+                    self.playAgain.alpha = 1
+                    
                 })
             }
         
@@ -89,7 +111,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     override func viewDidAppear(animated: Bool) {
+        
         label.center = CGPointMake(label.center.x - 400, label.center.y)
+        
+        playAgain.alpha = 0
     
     }
 

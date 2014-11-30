@@ -138,6 +138,21 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cr8-wZ-PYp">
+                                <rect key="frame" x="101" y="350" width="118" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="EjB-as-1gH"/>
+                                    <constraint firstAttribute="height" constant="30" id="iJj-Pi-Hit"/>
+                                </constraints>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAgainPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XbS-JH-Fj7"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAf-ak-XcJ">
                                 <rect key="frame" x="46" y="172" width="65" height="65"/>
                                 <constraints>
@@ -173,15 +188,18 @@
                             <constraint firstItem="6H7-rJ-rXF" firstAttribute="top" secondItem="SoO-hN-RZv" secondAttribute="top" constant="48" id="hEU-X9-syV"/>
                             <constraint firstItem="836-fl-GGO" firstAttribute="top" secondItem="SoO-hN-RZv" secondAttribute="top" constant="48" id="hwl-eW-yEV"/>
                             <constraint firstItem="SoO-hN-RZv" firstAttribute="leading" secondItem="7yr-bU-KuE" secondAttribute="leading" constant="-210" id="na8-nL-4zU"/>
+                            <constraint firstItem="Cr8-wZ-PYp" firstAttribute="top" secondItem="SoO-hN-RZv" secondAttribute="top" constant="226" id="smy-Bf-EP5"/>
                             <constraint firstItem="SoO-hN-RZv" firstAttribute="top" secondItem="2jR-Qd-hKa" secondAttribute="top" constant="-127" id="ts9-u0-Ab0"/>
                             <constraint firstItem="SoO-hN-RZv" firstAttribute="top" secondItem="fUX-Ak-gva" secondAttribute="top" constant="-127" id="uCr-mh-339"/>
                             <constraint firstItem="SoO-hN-RZv" firstAttribute="leading" secondItem="WAf-ak-XcJ" secondAttribute="leading" constant="-46" id="ufK-4u-kAl"/>
+                            <constraint firstItem="Cr8-wZ-PYp" firstAttribute="leading" secondItem="SoO-hN-RZv" secondAttribute="leading" constant="101" id="v7h-FZ-NwV"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="button0" destination="WAf-ak-XcJ" id="8Lj-8B-ic9"/>
                         <outlet property="label" destination="2jR-Qd-hKa" id="Pf7-rn-8i6"/>
+                        <outlet property="playAgain" destination="Cr8-wZ-PYp" id="tXI-3T-UOm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
