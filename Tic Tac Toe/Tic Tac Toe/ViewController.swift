@@ -12,9 +12,13 @@ class ViewController: UIViewController {
     
     var goNumber = 1
     
+    var winner = 0
+    
     // 0 = empty, 1 = O, 2 = X
     
     var gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    
+    let winningCombinations = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]]
 
     @IBOutlet weak var button0: UIButton!
     
@@ -34,6 +38,19 @@ class ViewController: UIViewController {
             
             gameState[sender.tag] = 1
         }
+            
+            for combination in winningCombinations {
+                
+                if (gameState[combination[0]]==gameState[combination[1]] && gameState[combination[1]]==gameState[combination[2]] && gameState[combination[0]] != 0) {
+                    
+                    winner = gameState[combination[0]]
+                }
+            }
+            
+            if (winner != 0) {
+                
+                println("We have a winner")
+            }
         
         goNumber++
         
