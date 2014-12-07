@@ -25,6 +25,12 @@ class ViewController: UIViewController, MKMapViewDelegate {
         var latDelta:CLLocationDegrees = 0.01
         
         var lonDelta:CLLocationDegrees = 0.01
+        
+        var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
+        
+        var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longtitude)
+        
+        var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
     }
 
     override func didReceiveMemoryWarning() {
