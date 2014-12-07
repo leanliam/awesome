@@ -22,6 +22,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         var longtitude:CLLocationDegrees = -73.985299
         
+        var latDelta:CLLocationDegrees = 0.01
+        
+        var lonDelta:CLLocationDegrees = 0.01
     }
 
     override func didReceiveMemoryWarning() {
