@@ -15,6 +15,13 @@ class ViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // 40.748570, -73.985299
+        
+        var latitude:CLLocationDegrees = 40.748570
+        
+        var longtitude:CLLocationDegrees = -73.985299
+        
     }
 
     override func didReceiveMemoryWarning() {
