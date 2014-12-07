@@ -11,6 +11,9 @@ import MapKit
 
 
 class ViewController: UIViewController, MKMapViewDelegate {
+    
+    
+    @IBOutlet weak var myMap: MKMapView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +34,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
         var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longtitude)
         
         var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+        
+        myMap.setRegion(region, animated: true)
+        
     }
 
     override func didReceiveMemoryWarning() {
