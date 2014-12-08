@@ -14,6 +14,7 @@
 		184F58BC1A34D27D00B4AE62 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184F58BA1A34D27D00B4AE62 /* LaunchScreen.xib */; };
 		184F58C81A34D27D00B4AE62 /* Learning_MapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F58C71A34D27D00B4AE62 /* Learning_MapsTests.swift */; };
 		184F58D21A34D29400B4AE62 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184F58D11A34D29400B4AE62 /* MapKit.framework */; };
+		184F58D41A3505F300B4AE62 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184F58D31A3505F300B4AE62 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		184F58C61A34D27D00B4AE62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184F58C71A34D27D00B4AE62 /* Learning_MapsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_MapsTests.swift; sourceTree = "<group>"; };
 		184F58D11A34D29400B4AE62 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		184F58D31A3505F300B4AE62 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184F58D41A3505F300B4AE62 /* CoreLocation.framework in Frameworks */,
 				184F58D21A34D29400B4AE62 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +65,7 @@
 		184F58A31A34D27D00B4AE62 = {
 			isa = PBXGroup;
 			children = (
+				184F58D31A3505F300B4AE62 /* CoreLocation.framework */,
 				184F58D11A34D29400B4AE62 /* MapKit.framework */,
 				184F58AE1A34D27D00B4AE62 /* Learning Maps */,
 				184F58C41A34D27D00B4AE62 /* Learning MapsTests */,
