@@ -12,6 +12,13 @@ import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
+    @IBOutlet weak var latitude: UILabel!
+    @IBOutlet weak var longitude: UILabel!
+    @IBOutlet weak var header: UILabel!
+    @IBOutlet weak var speed: UILabel!
+    @IBOutlet weak var altitude: UILabel!    
+    @IBOutlet weak var address: UILabel!
+    
     var manager:CLLocationManager!
     
 
