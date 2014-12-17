@@ -50,6 +50,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         heading.text = "\(userLocation.course)"
         speed.text = "\(userLocation.speed)"
         altitude.text = "\(userLocation.altitude)"
+        
+        CLGeocoder().reverseGeocodeLocation(userLocation, completionHandler:{(placemarks, error) in
+            
+            if error != nil {println(error)}
+            else {
+                
+                let p = CLPlacemark(placemark: placemarks?[0] as CLPlacemark)
+                
+                self.address.text = "\(p.subThoroughfare) \(p.thoroughfare) \n \(p.subLocality) \n  \(p.subAdministrativeArea) \n \(p.postalCode) \(p.country)"
+                
+            }
+        
+        })
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
