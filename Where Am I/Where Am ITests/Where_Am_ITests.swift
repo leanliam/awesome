@@ -2,8 +2,8 @@
 //  Where_Am_ITests.swift
 //  Where Am ITests
 //
-//  Created by leanliam on 12/15/14.
-//  Copyright (c) 2014 Appfish. All rights reserved.
+//  Created by leanliam on 1/31/15.
+//  Copyright (c) 2015 Appfish. All rights reserved.
 //
 
 import UIKit

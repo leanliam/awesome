@@ -27,13 +27,13 @@
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string> I want to know where you are!</string>
+	<string>I want to know where you are!</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>I want to always know where you are!</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
 	</array>
-	<key>NSLocationAlwaysInUseDescription</key>
-	<string>I always want to know where you are!</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
